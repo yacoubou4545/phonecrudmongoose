@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOW DETAILS</title>
+</head>
+<body>
+    <h1>Voir</h1>
+<ul>
+    <li> <%= phonemodel.uname %> </li>
+    <li> <%= phonemodel.phname %> </li>
+    <li> <%= phonemodel._id %> </li>
+
+
+</ul>
+<form  action="/phone/<%=phonemodel._id%>/delete?_method=DELETE" method="POST">
+    <button type="submit">Delete resource</button>
+  </form>
+
+    
+</body>
+</html>
